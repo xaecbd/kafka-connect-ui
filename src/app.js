@@ -40,9 +40,9 @@ angularAPP.run(
 
 angularAPP.config(function ($routeProvider) {
   $routeProvider
-    .when('/', {
+    .when('/home', {
       templateUrl: 'src/kafka-connect/home/home.html',
-       controller: 'HomeCtrl'
+      controller: 'HomeCtrl'
     })
     .when('/cluster/:cluster', {
       templateUrl: 'src/kafka-connect/cluster-view/cluster-view.html',
@@ -64,7 +64,8 @@ angularAPP.config(function ($routeProvider) {
       templateUrl: 'src/kafka-connect/view/connector-view.html',
       controller: 'ConnectorDetailCtrl'
     }).otherwise({
-    redirectTo: '/'
+      templateUrl: 'src/kafka-connect/home/home.html',
+      controller: 'HomeCtrl'
   });
 
 });
