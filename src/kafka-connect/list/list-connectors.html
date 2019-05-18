@@ -26,7 +26,7 @@
     <md-list class="connectors-list" flex>
       <md-list-item class="md-list-item-text"
                     style="background-color: {{connector.name == selectedConnector ? '#DADADA' : '' }}"
-                    dir-paginate="connector in allConnectors | orderBy:'name' | filter : search | itemsPerPage: 10"
+                    dir-paginate="connector in allConnectors | orderBy:'name' | filter : search | itemsPerPage: 30"
                     ng-href="#/cluster/{{cluster}}/connector/{{connector.name}}">
         <!--Status icon-->
         <span style="padding-right:10px">
