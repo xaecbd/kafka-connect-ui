@@ -1,7 +1,7 @@
 # kafka-connect-ui
 
-[![release](http://github-release-version.herokuapp.com/github/landoop/kafka-connect-ui/release.svg?style=flat)](https://github.com/landoop/kafka-connect-ui/releases/latest)
-[![docker](https://img.shields.io/docker/pulls/landoop/kafka-connect-ui.svg?style=flat)](https://hub.docker.com/r/landoop/kafka-connect-ui/)
+[![release](http://github-release-version.herokuapp.com/github/landoop/kafka-connect-ui/release.svg?style=flat)](https://github.com/xaecbd/kafka-connect-ui/releases/latest)
+[![docker](https://img.shields.io/docker/pulls/landoop/kafka-connect-ui.svg?style=flat)](https://hub.docker.com/r/xaecbd/kafka-connect-ui/)
 [![Join the chat at https://gitter.im/Landoop/support](https://img.shields.io/gitter/room/nwjs/nw.js.svg?maxAge=2592000)](https://gitter.im/Landoop/support?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This is a web tool for Kafka Connect for setting up and managing connectors for multiple connect clusters.
@@ -14,7 +14,7 @@ This is a web tool for Kafka Connect for setting up and managing connectors for 
 ```
 docker run --rm -it -p 8000:8000 \
            -e "CONNECT_URL=http://connect.distributed.url" \
-           landoop/kafka-connect-ui
+           xaecbd/kafka-connect-ui
 ```
 
 The CONNECT_URL can be a comma separated array of Connect worker endpoints. E.g: CONNECT_URL=http://connect.1.url,http://connect.2.url"
@@ -29,7 +29,7 @@ Web UI will be available at [localhost:8000](http://localhost:8000/)
 ## Build from source
 
 ```
-git clone https://github.com/Landoop/kafka-connect-ui.git
+git clone https://github.com/xaecbd/kafka-connect-ui.git
 cd kafka-connect-ui
 npm install -g bower http-server
 npm install
@@ -79,7 +79,7 @@ var clusters = [
 For our [25+ stream-reactor Kafka Connectors](http://www.landoop.com/kafka/connectors/) we have a template of metadata within the `supported-connectors.js`. In any case you will be shown all the existing connectors in your classpath with all the required fields to set them up.
 
 ## Changelog
-[Here](https://github.com/Landoop/kafka-connect-ui/releases)
+[Here](https://github.com/xaecbd/kafka-connect-ui/releases)
 
 ## License
 
